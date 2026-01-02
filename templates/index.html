@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SignVerse.AI | Speech Translator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>🎤 SignVerse.AI</h2>
+  <p class="subtitle">Speak Any Language → English → Translate</p>
+
+  <button onclick="startListening()">🎙️ Start Recording</button>
+
+  <p class="status" id="statusText">Click and speak</p>
+
+  <!-- English Output -->
+  <label><b>English Text</b></label>
+  <textarea id="englishOutput" placeholder="English text will appear here..."></textarea>
+
+  <!-- Translation -->
+  <label><b>Translate English to:</b></label>
+  <select id="languageSelect">
+    <option value="hi">Hindi</option>
+    <option value="mr">Marathi</option>
+    <option value="ur">Urdu</option>
+    <option value="ta">Tamil</option>
+    <option value="te">Telugu</option>
+    <option value="kn">Kannada</option>
+    <option value="ml">Malayalam</option>
+    <option value="bn">Bengali</option>
+    <option value="gu">Gujarati</option>
+    <option value="pa">Punjabi</option>
+  </select>
+
+  <button onclick="translateEnglish()">🌍 Translate</button>
+
+  <!-- Final Output -->
+  <textarea id="finalOutput" placeholder="Translated text will appear here..."></textarea>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
