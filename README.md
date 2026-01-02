@@ -4,7 +4,7 @@ This project implements a real-time speech-to-text and multilingual translation 
 
 The system is designed to handle multilingual and mixed-language speech (e.g., Hinglish) efficiently, making it suitable for diverse real-world communication scenarios.
 
-📌 Project Features
+##📌 Project Features
 
 🎙️ Live Speech Input using a microphone (no audio file upload)
 
